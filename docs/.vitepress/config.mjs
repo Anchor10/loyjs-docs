@@ -2,21 +2,39 @@ import { defineConfig } from 'vitepress';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-	title: '觅兔文档',
-	description: '觅兔文档站点',
+	lang: 'zh-CN',
+	base: '/docs/',
+	title: '觅兔知识库',
+	description: '觅兔知识库站点',
 	themeConfig: {
 		// https://vitepress.dev/reference/default-theme-config
+		logo: '/static/images/loy-logo.jpg',
+		siteTitle: 'Loyjs',
+		search: {
+			provider: 'local'
+		},
 		nav: [
 			{ text: '首页', link: '/' },
-			{ text: '示例', link: '/markdown-examples' },
 			{
 				text: '备忘录',
 				items: [
 					{
 						text: '生日表',
-						link: '/markdown-examples',
+						link: '/备忘录/生日表',
 					},
 				],
+			},
+			{
+				text: '前端知识库', items: [
+					{
+						text: 'Vue',
+						link: '/前端知识库/vue/vue示例.md',
+					},
+					{
+						text: 'Css',
+						link: '/前端知识库/css/css示例.md',
+					}
+				]
 			},
 		],
 
@@ -30,6 +48,6 @@ export default defineConfig({
 			},
 		],
 
-		socialLinks: [{ icon: 'question', link: 'https://home.loyjs.com' }],
+		socialLinks: [{ title: '起始页', link: 'https://home.loyjs.com' }, { icon: 'github', link: 'https://gitee.com/anchor10' }],
 	},
 });
