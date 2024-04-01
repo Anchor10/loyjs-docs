@@ -3,12 +3,11 @@ import { defineConfig } from 'vitepress';
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
 	lang: 'zh-CN',
-	base: '/docs/',
 	title: '觅兔知识库',
 	description: '觅兔知识库站点',
 	themeConfig: {
 		// https://vitepress.dev/reference/default-theme-config
-		logo: '/static/images/loy-logo.jpg',
+		logo: '/public/images/loy-logo.jpg',
 		siteTitle: 'Loyjs',
 		search: {
 			provider: 'local'
