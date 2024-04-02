@@ -17,13 +17,24 @@ hero:
       src: /public/images/fine.png
       alt: VitePress
 features:
-  - icon: 📝
-    title: 简约
+  - icon: 🤯
+    title: 语雀小记
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - icon: 📝
+    link: https://www.yuque.com/dashboard/notes
+  - icon: 🎨
     title: 优雅
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - icon: 🚀
+    title: 快速
+    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - icon: 👼🏻
+    title: 简约
+    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    link: /备忘录
+  - icon: 🥳
+    title: 优雅
+    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - icon: 🌆
     title: 快速
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
