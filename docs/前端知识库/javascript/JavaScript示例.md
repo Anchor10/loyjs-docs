@@ -1,0 +1,1 @@
+JavaScript示例

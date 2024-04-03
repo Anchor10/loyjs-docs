@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Runtime API Examples | 觅兔知识库</title>
+    <meta name="description" content="觅兔知识库站点">
+    <meta name="generator" content="VitePress v1.0.1">
+    <link rel="preload stylesheet" href="/assets/style.Cd079YX2.css" as="style">
+    
+    <script type="module" src="/assets/app.CPL4pWTa.js"></script>
+    <link rel="preload" href="/assets/inter-roman-latin.Bu8hRsVA.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="modulepreload" href="/assets/chunks/framework.DFluhY12.js">
+    <link rel="modulepreload" href="/assets/chunks/theme.DZERDCBn.js">
+    <link rel="modulepreload" href="/assets/api-examples.md.BWj8DiKm.lean.js">
+    <script id="check-dark-mode">(()=>{const e=localStorage.getItem("vitepress-theme-appearance")||"auto",a=window.matchMedia("(prefers-color-scheme: dark)").matches;(!e||e==="auto"?a:e==="dark")&&document.documentElement.classList.add("dark")})();</script>
+    <script id="check-mac-os">document.documentElement.classList.toggle("mac",/Mac|iPhone|iPod|iPad/i.test(navigator.platform));</script>
+  </head>
+  <body>
+    <div id="app"><div class="Layout" data-v-d0a3e7a7><!--[--><!--]--><!--[--><span tabindex="-1" data-v-45efccf3></span><a href="#VPContent" class="VPSkipLink visually-hidden" data-v-45efccf3> Skip to content </a><!--]--><!----><header class="VPNav" data-v-d0a3e7a7 data-v-bf8316e5><div class="VPNavBar has-sidebar top" data-v-bf8316e5 data-v-d2a6f0a8><div class="wrapper" data-v-d2a6f0a8><div class="container" data-v-d2a6f0a8><div class="title" data-v-d2a6f0a8><div class="VPNavBarTitle has-sidebar" data-v-d2a6f0a8 data-v-c290e016><a class="title" href="/" data-v-c290e016><!--[--><!--]--><!--[--><img class="VPImage logo" src="/public/images/loy-logo.jpg" alt data-v-4227bf10><!--]--><span data-v-c290e016>Loyjs</span><!--[--><!--]--></a></div></div><div class="content" data-v-d2a6f0a8><div class="content-body" data-v-d2a6f0a8><!--[--><!--]--><div class="VPNavBarSearch search" data-v-d2a6f0a8><!--[--><!----><div id="local-search"><button type="button" class="DocSearch DocSearch-Button" aria-label="Search"><span class="DocSearch-Button-Container"><span class="vp-icon DocSearch-Search-Icon"></span><span class="DocSearch-Button-Placeholder">Search</span></span><span class="DocSearch-Button-Keys"><kbd class="DocSearch-Button-Key"></kbd><kbd class="DocSearch-Button-Key">K</kbd></span></button></div><!--]--></div><nav aria-labelledby="main-nav-aria-label" class="VPNavBarMenu menu" data-v-d2a6f0a8 data-v-88463ab2><span id="main-nav-aria-label" class="visually-hidden" data-v-88463ab2>Main Navigation</span><!--[--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/" tabindex="0" data-v-88463ab2 data-v-389968b4><!--[--><span data-v-389968b4>首页</span><!--]--></a><!--]--><!--[--><div class="VPFlyout VPNavBarMenuGroup" data-v-88463ab2 data-v-3ae3b33c><button type="button" class="button" aria-haspopup="true" aria-expanded="false" data-v-3ae3b33c><span class="text" data-v-3ae3b33c><!----><span data-v-3ae3b33c>备忘录</span><span class="vpi-chevron-down text-icon" data-v-3ae3b33c></span></span></button><div class="menu" data-v-3ae3b33c><div class="VPMenu" data-v-3ae3b33c data-v-d0cfa421><div class="items" data-v-d0cfa421><!--[--><!--[--><div class="VPMenuLink" data-v-d0cfa421 data-v-d88aa0fe><a class="VPLink link" href="/%E5%A4%87%E5%BF%98%E5%BD%95/%E7%94%9F%E6%97%A5%E8%A1%A8.html" data-v-d88aa0fe><!--[-->生日表<!--]--></a></div><!--]--><!--]--></div><!--[--><!--]--></div></div></div><!--]--><!--[--><div class="VPFlyout VPNavBarMenuGroup" data-v-88463ab2 data-v-3ae3b33c><button type="button" class="button" aria-haspopup="true" aria-expanded="false" data-v-3ae3b33c><span class="text" data-v-3ae3b33c><!----><span data-v-3ae3b33c>前端知识库</span><span class="vpi-chevron-down text-icon" data-v-3ae3b33c></span></span></button><div class="menu" data-v-3ae3b33c><div class="VPMenu" data-v-3ae3b33c data-v-d0cfa421><div class="items" data-v-d0cfa421><!--[--><!--[--><div class="VPMenuLink" data-v-d0cfa421 data-v-d88aa0fe><a class="VPLink link" href="/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E5%BA%93/vue/vue%E7%A4%BA%E4%BE%8B.html" data-v-d88aa0fe><!--[-->Vue<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-d0cfa421 data-v-d88aa0fe><a class="VPLink link" href="/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E5%BA%93/css/css%E7%A4%BA%E4%BE%8B.html" data-v-d88aa0fe><!--[-->Css<!--]--></a></div><!--]--><!--]--></div><!--[--><!--]--></div></div></div><!--]--><!--]--></nav><!----><div class="VPNavBarAppearance appearance" data-v-d2a6f0a8 data-v-db401546><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title="Switch to dark theme" aria-checked="false" data-v-db401546 data-v-2db0c0be data-v-03442093><span class="check" data-v-03442093><span class="icon" data-v-03442093><!--[--><span class="vpi-sun sun" data-v-2db0c0be></span><span class="vpi-moon moon" data-v-2db0c0be></span><!--]--></span></span></button></div><div class="VPSocialLinks VPNavBarSocialLinks social-links" data-v-d2a6f0a8 data-v-79fbe29b data-v-d83cc2c9><!--[--><a class="VPSocialLink no-icon" href="https://home.loyjs.com" aria-label target="_blank" rel="noopener" data-v-d83cc2c9 data-v-74b8741b><span class="vpi-social-undefined" /></a><a class="VPSocialLink no-icon" href="https://gitee.com/anchor10" aria-label="github" target="_blank" rel="noopener" data-v-d83cc2c9 data-v-74b8741b><span class="vpi-social-github" /></a><!--]--></div><div class="VPFlyout VPNavBarExtra extra" data-v-d2a6f0a8 data-v-5d60f9f3 data-v-3ae3b33c><button type="button" class="button" aria-haspopup="true" aria-expanded="false" aria-label="extra navigation" data-v-3ae3b33c><span class="vpi-more-horizontal icon" data-v-3ae3b33c></span></button><div class="menu" data-v-3ae3b33c><div class="VPMenu" data-v-3ae3b33c data-v-d0cfa421><!----><!--[--><!--[--><!----><div class="group" data-v-5d60f9f3><div class="item appearance" data-v-5d60f9f3><p class="label" data-v-5d60f9f3>Appearance</p><div class="appearance-action" data-v-5d60f9f3><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title="Switch to dark theme" aria-checked="false" data-v-5d60f9f3 data-v-2db0c0be data-v-03442093><span class="check" data-v-03442093><span class="icon" data-v-03442093><!--[--><span class="vpi-sun sun" data-v-2db0c0be></span><span class="vpi-moon moon" data-v-2db0c0be></span><!--]--></span></span></button></div></div></div><div class="group" data-v-5d60f9f3><div class="item social-links" data-v-5d60f9f3><div class="VPSocialLinks social-links-list" data-v-5d60f9f3 data-v-d83cc2c9><!--[--><a class="VPSocialLink no-icon" href="https://home.loyjs.com" aria-label target="_blank" rel="noopener" data-v-d83cc2c9 data-v-74b8741b><span class="vpi-social-undefined" /></a><a class="VPSocialLink no-icon" href="https://gitee.com/anchor10" aria-label="github" target="_blank" rel="noopener" data-v-d83cc2c9 data-v-74b8741b><span class="vpi-social-github" /></a><!--]--></div></div></div><!--]--><!--]--></div></div></div><!--[--><!--]--><button type="button" class="VPNavBarHamburger hamburger" aria-label="mobile navigation" aria-expanded="false" aria-controls="VPNavScreen" data-v-d2a6f0a8 data-v-56764369><span class="container" data-v-56764369><span class="top" data-v-56764369></span><span class="middle" data-v-56764369></span><span class="bottom" data-v-56764369></span></span></button></div></div></div></div><div class="divider" data-v-d2a6f0a8><div class="divider-line" data-v-d2a6f0a8></div></div></div><!----></header><div class="VPLocalNav has-sidebar empty" data-v-d0a3e7a7 data-v-bbaf15df><div class="container" data-v-bbaf15df><button class="menu" aria-expanded="false" aria-controls="VPSidebarNav" data-v-bbaf15df><span class="vpi-align-left menu-icon" data-v-bbaf15df></span><span class="menu-text" data-v-bbaf15df>Menu</span></button><div class="VPLocalNavOutlineDropdown" style="--vp-vh:0px;" data-v-bbaf15df data-v-4c7bccde><button data-v-4c7bccde>Return to top</button><!----></div></div></div><aside class="VPSidebar" data-v-d0a3e7a7 data-v-c15eb57d><div class="curtain" data-v-c15eb57d></div><nav class="nav" id="VPSidebarNav" aria-labelledby="sidebar-aria-label" tabindex="-1" data-v-c15eb57d><span class="visually-hidden" id="sidebar-aria-label" data-v-c15eb57d> Sidebar Navigation </span><!--[--><!--]--><!--[--><div class="group" data-v-c15eb57d><section class="VPSidebarItem level-0 has-active" data-v-c15eb57d data-v-b5d92922><div class="item" role="button" tabindex="0" data-v-b5d92922><div class="indicator" data-v-b5d92922></div><h2 class="text" data-v-b5d92922>备忘录</h2><!----></div><div class="items" data-v-b5d92922><!--[--><div class="VPSidebarItem level-1 is-link" data-v-b5d92922 data-v-b5d92922><div class="item" data-v-b5d92922><div class="indicator" data-v-b5d92922></div><a class="VPLink link link" href="/markdown-examples.html" data-v-b5d92922><!--[--><p class="text" data-v-b5d92922>工作账号</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b5d92922 data-v-b5d92922><div class="item" data-v-b5d92922><div class="indicator" data-v-b5d92922></div><a class="VPLink link link" href="/api-examples.html" data-v-b5d92922><!--[--><p class="text" data-v-b5d92922>生活账号</p><!--]--></a><!----></div><!----></div><!--]--></div></section></div><!--]--><!--[--><!--]--></nav></aside><div class="VPContent has-sidebar" id="VPContent" data-v-d0a3e7a7 data-v-50b226df><div class="VPDoc has-sidebar has-aside" data-v-50b226df data-v-7a804511><!--[--><!--]--><div class="container" data-v-7a804511><div class="aside" data-v-7a804511><div class="aside-curtain" data-v-7a804511></div><div class="aside-container" data-v-7a804511><div class="aside-content" data-v-7a804511><div class="VPDocAside" data-v-7a804511 data-v-fa71de44><!--[--><!--]--><!--[--><!--]--><div class="VPDocAsideOutline" role="navigation" data-v-fa71de44 data-v-8aeb4c9c><div class="content" data-v-8aeb4c9c><div class="outline-marker" data-v-8aeb4c9c></div><div class="outline-title" role="heading" aria-level="2" data-v-8aeb4c9c>On this page</div><nav aria-labelledby="doc-outline-aria-label" data-v-8aeb4c9c><span class="visually-hidden" id="doc-outline-aria-label" data-v-8aeb4c9c> Table of Contents for current page </span><ul class="VPDocOutlineItem root" data-v-8aeb4c9c data-v-2d44e95a><!--[--><!--]--></ul></nav></div></div><!--[--><!--]--><div class="spacer" data-v-fa71de44></div><!--[--><!--]--><!----><!--[--><!--]--><!--[--><!--]--></div></div></div></div><div class="content" data-v-7a804511><div class="content-container" data-v-7a804511><!--[--><!--]--><main class="main" data-v-7a804511><div style="position:relative;" class="vp-doc _api-examples" data-v-7a804511><div><h1 id="runtime-api-examples" tabindex="-1">Runtime API Examples <a class="header-anchor" href="#runtime-api-examples" aria-label="Permalink to &quot;Runtime API Examples&quot;">​</a></h1><p>This page demonstrates usage of some of the runtime APIs provided by VitePress.</p><p>The main <code>useData()</code> API can be used to access site, theme, and page data for the current page. It works in both <code>.md</code> and <code>.vue</code> files:</p><div class="language-md vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">md</span><pre class="shiki shiki-themes github-light github-dark vp-code"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">script</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> setup</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&gt;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> { useData } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> &#39;vitepress&#39;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">const</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> { </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">theme</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">page</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">frontmatter</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> useData</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">()</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">script</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;--shiki-light-font-weight:bold;--shiki-dark-font-weight:bold;">## Results</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;--shiki-light-font-weight:bold;--shiki-dark-font-weight:bold;">### Theme Data</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">pre</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&gt;{{ theme }}&lt;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">pre</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">### Page Data</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">pre</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&gt;{{ page }}&lt;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">pre</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">### Page Frontmatter</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">pre</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&gt;{{ frontmatter }}&lt;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">pre</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&gt;</span></span></code></pre></div><h2 id="results" tabindex="-1">Results <a class="header-anchor" href="#results" aria-label="Permalink to &quot;Results&quot;">​</a></h2><h3 id="theme-data" tabindex="-1">Theme Data <a class="header-anchor" href="#theme-data" aria-label="Permalink to &quot;Theme Data&quot;">​</a></h3><pre>{
+  &quot;logo&quot;: &quot;/public/images/loy-logo.jpg&quot;,
+  &quot;siteTitle&quot;: &quot;Loyjs&quot;,
+  &quot;search&quot;: {
+    &quot;provider&quot;: &quot;local&quot;
+  },
+  &quot;nav&quot;: [
+    {
+      &quot;text&quot;: &quot;首页&quot;,
+      &quot;link&quot;: &quot;/&quot;
+    },
+    {
+      &quot;text&quot;: &quot;备忘录&quot;,
+      &quot;items&quot;: [
+        {
+          &quot;text&quot;: &quot;生日表&quot;,
+          &quot;link&quot;: &quot;/备忘录/生日表&quot;
+        }
+      ]
+    },
+    {
+      &quot;text&quot;: &quot;前端知识库&quot;,
+      &quot;items&quot;: [
+        {
+          &quot;text&quot;: &quot;Vue&quot;,
+          &quot;link&quot;: &quot;/前端知识库/vue/vue示例.md&quot;
+        },
+        {
+          &quot;text&quot;: &quot;Css&quot;,
+          &quot;link&quot;: &quot;/前端知识库/css/css示例.md&quot;
+        }
+      ]
+    }
+  ],
+  &quot;sidebar&quot;: [
+    {
+      &quot;text&quot;: &quot;备忘录&quot;,
+      &quot;items&quot;: [
+        {
+          &quot;text&quot;: &quot;工作账号&quot;,
+          &quot;link&quot;: &quot;/markdown-examples&quot;
+        },
+        {
+          &quot;text&quot;: &quot;生活账号&quot;,
+          &quot;link&quot;: &quot;/api-examples&quot;
+        }
+      ]
+    }
+  ],
+  &quot;socialLinks&quot;: [
+    {
+      &quot;title&quot;: &quot;起始页&quot;,
+      &quot;link&quot;: &quot;https://home.loyjs.com&quot;
+    },
+    {
+      &quot;icon&quot;: &quot;github&quot;,
+      &quot;link&quot;: &quot;https://gitee.com/anchor10&quot;
+    }
+  ]
+}</pre><h3 id="page-data" tabindex="-1">Page Data <a class="header-anchor" href="#page-data" aria-label="Permalink to &quot;Page Data&quot;">​</a></h3><pre>{
+  &quot;title&quot;: &quot;Runtime API Examples&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;frontmatter&quot;: {
+    &quot;outline&quot;: &quot;deep&quot;
+  },
+  &quot;headers&quot;: [],
+  &quot;relativePath&quot;: &quot;api-examples.md&quot;,
+  &quot;filePath&quot;: &quot;api-examples.md&quot;
+}</pre><h3 id="page-frontmatter" tabindex="-1">Page Frontmatter <a class="header-anchor" href="#page-frontmatter" aria-label="Permalink to &quot;Page Frontmatter&quot;">​</a></h3><pre>{
+  &quot;outline&quot;: &quot;deep&quot;
+}</pre><h2 id="more" tabindex="-1">More <a class="header-anchor" href="#more" aria-label="Permalink to &quot;More&quot;">​</a></h2><p>Check out the documentation for the <a href="https://vitepress.dev/reference/runtime-api#usedata" target="_blank" rel="noreferrer">full list of runtime APIs</a>.</p></div></div></main><footer class="VPDocFooter" data-v-7a804511 data-v-91928579><!--[--><!--]--><!----><nav class="prev-next" data-v-91928579><div class="pager" data-v-91928579><a class="VPLink link pager-link prev" href="/markdown-examples.html" data-v-91928579><!--[--><span class="desc" data-v-91928579>Previous page</span><span class="title" data-v-91928579>工作账号</span><!--]--></a></div><div class="pager" data-v-91928579><!----></div></nav></footer><!--[--><!--]--></div></div></div><!--[--><!--]--></div></div><!----><!--[--><!--]--></div></div>
+    <script>window.__VP_HASH_MAP__=JSON.parse("{\"前端知识库_vue_vue示例.md\":\"CLgNXCGU\",\"前端知识库_css_css示例.md\":\"B6kn3ZhF\",\"备忘录_生日表.md\":\"B5fYL7cT\",\"index.md\":\"DTPi_B_s\",\"markdown-examples.md\":\"0N4iSjgN\",\"api-examples.md\":\"BWj8DiKm\"}");window.__VP_SITE_DATA__=JSON.parse("{\"lang\":\"zh-CN\",\"dir\":\"ltr\",\"title\":\"觅兔知识库\",\"description\":\"觅兔知识库站点\",\"base\":\"/\",\"head\":[],\"router\":{\"prefetchLinks\":true},\"appearance\":true,\"themeConfig\":{\"logo\":\"/public/images/loy-logo.jpg\",\"siteTitle\":\"Loyjs\",\"search\":{\"provider\":\"local\"},\"nav\":[{\"text\":\"首页\",\"link\":\"/\"},{\"text\":\"备忘录\",\"items\":[{\"text\":\"生日表\",\"link\":\"/备忘录/生日表\"}]},{\"text\":\"前端知识库\",\"items\":[{\"text\":\"Vue\",\"link\":\"/前端知识库/vue/vue示例.md\"},{\"text\":\"Css\",\"link\":\"/前端知识库/css/css示例.md\"}]}],\"sidebar\":[{\"text\":\"备忘录\",\"items\":[{\"text\":\"工作账号\",\"link\":\"/markdown-examples\"},{\"text\":\"生活账号\",\"link\":\"/api-examples\"}]}],\"socialLinks\":[{\"title\":\"起始页\",\"link\":\"https://home.loyjs.com\"},{\"icon\":\"github\",\"link\":\"https://gitee.com/anchor10\"}]},\"locales\":{},\"scrollOffset\":134,\"cleanUrls\":false}");</script>
+    
+  </body>
+</html>
