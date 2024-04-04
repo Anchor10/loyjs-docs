@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: Loyjs文档
+  name: Loyjs知识库
   text: 每日进步一点点
   tagline: 知识库就像书一样，让多篇文档结构化，方便知识的创作与沉淀
   actions:
@@ -30,7 +30,7 @@ features:
   - icon: 👼🏻
     title: 简约
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-    link: /备忘录
+    link: /备忘录/
   - icon: 🥳
     title: 优雅
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
