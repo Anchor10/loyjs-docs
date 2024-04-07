@@ -8,7 +8,11 @@ export default defineConfig({
 	title: 'Loyjs知识库',
 	description: description,
 	head: [
-		['link', { rel: 'icon', href: '/images/loy-logo.jpg' }]
+		['link', { rel: 'icon', href: '/images/loy-logo.jpg' }],
+		['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1' }],
+		['meta', { name: 'author', content: 'loyjs' }],
+		['meta', { name: 'keywords', content: 'loyjs,loyjs知识库,loyjs文档,loyjs教程,loyjs博客,loyjs博客教程' }],
+		['meta', { name: 'description', content: description }],
 	],
 	sitemap: {
 		hostname: homepage
