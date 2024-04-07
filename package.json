@@ -1,4 +1,17 @@
 {
+  "name": "loyjs-docs",
+  "version": "1.0.0",
+  "description": "Loyjs知识库是有觅兔先生创建的知识库文档站点。涵盖前端各种知识，包括但不限于javascript、vue、前端工程化等方面的知识和疑难杂症。",
+  "type": "module",
+  "author": {
+    "name": "觅兔先生",
+    "email": "1129713332@qq.com"
+  },
+  "homepage": "https://docs.loyjs.com",
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/anchor10/loyjs-docs.git"
+  },
   "devDependencies": {
     "vite": "^5.2.7",
     "vitepress": "^1.0.1",

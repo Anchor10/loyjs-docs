@@ -1,17 +1,25 @@
 import { defineConfig } from 'vitepress';
 import { generateSidebar } from 'vitepress-sidebar';
+import { description, repository, homepage } from '../../package.json';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
 	lang: 'zh-CN',
-	title: '觅兔知识库',
-	description: '觅兔知识库站点',
+	title: 'Loyjs知识库',
+	description: description,
 	head: [
 		['link', { rel: 'icon', href: '/public/images/loy-logo.jpg' }]
 	],
+	sitemap: {
+		hostname: homepage
+	},
 	themeConfig: {
 		// https://vitepress.dev/reference/default-theme-config
-		logo: '/public/images/loy-logo.jpg',
+		logo: {
+			src: '/public/images/loy-logo.jpg',
+			width: 24,
+			height: 24,
+		},
 		siteTitle: 'Loyjs',
 		search: {
 			provider: 'local'
@@ -43,29 +51,37 @@ export default defineConfig({
 
 		sidebar: generateSidebar([
 			{
-				documentRootPath: '/docs',
 				scanStartPath: '备忘录',
 				resolvePath: '/备忘录/',
+				documentRootPath: '/docs',
+				collapsed: false,
 				useTitleFromFileHeading: true,
+				useTitleFromFrontmatter: true,
 				hyphenToSpace: true, //将文件名中包含的-符号转换为空格并显示为标题
 				excludeFolders: [], // 排除的文件夹
 				excludeFiles: [], // 排除的文件
 			},
 			{
-				documentRootPath: '/docs',
 				scanStartPath: '百宝箱',
 				resolvePath: '/百宝箱/',
+				documentRootPath: '/docs',
+				collapsed: false,
 				useTitleFromFileHeading: true,
-				hyphenToSpace: true,
-				excludeFolders: []
+				useTitleFromFrontmatter: true,
+				hyphenToSpace: true, //将文件名中包含的-符号转换为空格并显示为标题
+				excludeFolders: [], // 排除的文件夹
+				excludeFiles: [], // 排除的文件
 			},
 			{
-				documentRootPath: '/docs',
 				scanStartPath: '前端知识库',
 				resolvePath: '/前端知识库/',
+				documentRootPath: '/docs',
+				collapsed: false,
 				useTitleFromFileHeading: true,
-				hyphenToSpace: true,
-				excludeFolders: []
+				useTitleFromFrontmatter: true,
+				hyphenToSpace: true, //将文件名中包含的-符号转换为空格并显示为标题
+				excludeFolders: [], // 排除的文件夹
+				excludeFiles: [], // 排除的文件
 			}
 		]),
 
