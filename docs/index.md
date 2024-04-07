@@ -14,7 +14,7 @@ hero:
       text: 知识库入口
       link: /前端知识库
   image:
-      src: /public/images/fine.png
+      src: /images/fine.png
       alt: VitePress
 features:
   - icon: 🤯

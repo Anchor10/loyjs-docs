@@ -8,7 +8,7 @@ export default defineConfig({
 	title: 'Loyjs知识库',
 	description: description,
 	head: [
-		['link', { rel: 'icon', href: '/public/images/loy-logo.jpg' }]
+		['link', { rel: 'icon', href: '/images/loy-logo.jpg' }]
 	],
 	sitemap: {
 		hostname: homepage
@@ -16,7 +16,7 @@ export default defineConfig({
 	themeConfig: {
 		// https://vitepress.dev/reference/default-theme-config
 		logo: {
-			src: '/public/images/loy-logo.jpg',
+			src: '/images/loy-logo.jpg',
 			width: 24,
 			height: 24,
 		},
