@@ -4,7 +4,7 @@ import { description, repository, homepage } from '../../package.json';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-	lang: 'zh-CN',
+	// lang: 'zh-CN',
 	title: 'Loyjs知识库',
 	description: description,
 	head: [
@@ -38,13 +38,25 @@ export default defineConfig({
 			{
 				text: '前端知识库', items: [
 					{
-						text: 'Vue',
-						link: '/前端知识库/vue/vue示例',
+						text: 'HTML',
+						link: '/前端知识库/HTML/HTML基础',
 					},
 					{
-						text: 'Css',
-						link: '/前端知识库/css/css示例',
-					}
+						text: 'CSS',
+						link: '/前端知识库/CSS/CSS基础',
+					},
+					{
+						text: 'Javascript',
+						link: '/前端知识库/Javascript/Javascript基础',
+					},
+					{
+						text: 'Vue',
+						link: '/前端知识库/Vue/Vue基础',
+					},
+					{
+						text: 'Vite',
+						link: '/前端知识库/Vite/Vite基础',
+					},
 				]
 			},
 		],
