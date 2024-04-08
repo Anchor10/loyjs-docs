@@ -3,3 +3,8 @@
   --vp-c-brand-1: #646cff;
   --vp-c-brand-2: #747bff;
 } */
+
+/* 隐藏侧边栏导航的数字编号 */
+.vitepress-theme-default-sidebar .nav-item-title::before {
+  display: none;
+}

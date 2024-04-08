@@ -2,6 +2,8 @@ import { defineConfig } from 'vitepress';
 import { generateSidebar } from 'vitepress-sidebar';
 import { description, repository, homepage } from '../../package.json';
 
+import MarkdownPreview from 'vite-plugin-markdown-preview'
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
 	// lang: 'zh-CN',
@@ -43,23 +45,23 @@ export default defineConfig({
 				text: '前端知识库', items: [
 					{
 						text: 'HTML',
-						link: '/前端知识库/HTML/HTML基础',
+						link: '/前端知识库/0-HTML/0-HTML基础',
 					},
 					{
 						text: 'CSS',
-						link: '/前端知识库/CSS/CSS基础',
+						link: '/前端知识库/1-CSS/1-CSS基础',
 					},
 					{
 						text: 'Javascript',
-						link: '/前端知识库/Javascript/Javascript基础',
+						link: '/前端知识库/2-Javascript/2-Javascript基础',
 					},
 					{
 						text: 'Vue',
-						link: '/前端知识库/Vue/Vue基础',
+						link: '/前端知识库/3-Vue/3-Vue基础',
 					},
 					{
 						text: 'Vite',
-						link: '/前端知识库/Vite/Vite基础',
+						link: '/前端知识库/4-Vite/4-Vite基础',
 					},
 				]
 			},
@@ -125,10 +127,26 @@ export default defineConfig({
 		// 	},
 		// ],
 
+		// 添加自定义样式文件
+		css: {
+			custom: '/theme/custom.css'
+		},
+
 		socialLinks: [{ icon: 'discord', link: 'https://home.loyjs.com' }, { icon: 'github', link: 'https://gitee.com/anchor10' }],
 		footer: {
 			message: '去做你害怕的事，去见你害怕的人，这就是成长。 ----末那大叔',
 			copyright: 'Copyright © 2023-present By 觅兔先生'
-		}
+		},
+		darkModeSwitchLabel: '外观',
+		returnToTopLabel: '返回顶部',
+		lastUpdatedText: '上次更新',
+
+		docFooter: {
+			prev: '上一篇',
+			next: '下一篇',
+		},
+	},
+	vite: {
+		plugins: [MarkdownPreview()],
 	},
 });
