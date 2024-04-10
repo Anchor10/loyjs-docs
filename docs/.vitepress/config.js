@@ -31,6 +31,30 @@ export default defineConfig({
 			provider: 'local'
 		},
 		nav: [
+			{
+				text: '前端知识库', items: [
+					{
+						text: 'HTML',
+						link: '/前端知识库/0-HTML/0-HTML基础',
+					},
+					{
+						text: 'CSS',
+						link: '/前端知识库/1-CSS/0-CSS基础',
+					},
+					{
+						text: 'Javascript',
+						link: '/前端知识库/2-Javascript/0-Javascript基础',
+					},
+					{
+						text: 'Vue',
+						link: '/前端知识库/3-Vue/0-Vue基础',
+					},
+					{
+						text: 'Vite',
+						link: '/前端知识库/4-Vite/0-Vite基础',
+					},
+				]
+			},
 			{ text: '百宝箱', link: '/百宝箱/' },
 			{
 				text: '备忘录',
@@ -40,30 +64,6 @@ export default defineConfig({
 						link: '/备忘录/生日表',
 					},
 				],
-			},
-			{
-				text: '前端知识库', items: [
-					{
-						text: 'HTML',
-						link: '/前端知识库/0-HTML/0-HTML基础',
-					},
-					{
-						text: 'CSS',
-						link: '/前端知识库/1-CSS/1-CSS基础',
-					},
-					{
-						text: 'Javascript',
-						link: '/前端知识库/2-Javascript/2-Javascript基础',
-					},
-					{
-						text: 'Vue',
-						link: '/前端知识库/3-Vue/3-Vue基础',
-					},
-					{
-						text: 'Vite',
-						link: '/前端知识库/4-Vite/4-Vite基础',
-					},
-				]
 			},
 		],
 
@@ -145,6 +145,7 @@ export default defineConfig({
 			prev: '上一篇',
 			next: '下一篇',
 		},
+		lastUpdated: true,
 	},
 	vite: {
 		plugins: [MarkdownPreview()],
