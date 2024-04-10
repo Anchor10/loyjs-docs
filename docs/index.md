@@ -19,11 +19,12 @@ hero:
 features:
   - icon: 🤯
     title: 语雀小记
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    details: 语雀小记，随时随地的记录。
     link: https://www.yuque.com/dashboard/notes
   - icon: 🎨
-    title: 优雅
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    title: Loyjs浏览器主页
+    details: 一个简洁、美观、实用的浏览器起始页，让您的网上冲浪体验更加舒心轻松。
+    link: https://home.loyjs.com
   - icon: 🚀
     title: 快速
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -38,3 +39,10 @@ features:
     title: 快速
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
+
+<style>
+  :root {
+    --vp-home-hero-name-color: transparent;
+    --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, #41d1ff);
+  }
+</style>
