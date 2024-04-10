@@ -1,8 +1,10 @@
 // https://vitepress.dev/guide/custom-theme
 import { h } from 'vue'
+// import { useData, EnhanceAppContext } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import './style.css'
 import './custom.css'
+import LNavLink from './components/LNavLink.vue'
 
 /** @type {import('vitepress').Theme} */
 export default {
@@ -13,6 +15,6 @@ export default {
     })
   },
   enhanceApp({ app, router, siteData }) {
-    // ...
+    app.component('LNavLink', LNavLink)
   }
 }

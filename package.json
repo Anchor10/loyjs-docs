@@ -13,6 +13,7 @@
     "url": "https://gitee.com/anchor10/loyjs-docs.git"
   },
   "devDependencies": {
+    "sass": "^1.74.1",
     "vite": "^5.2.7",
     "vitepress": "^1.0.1",
     "vitepress-sidebar": "^1.22.0"
