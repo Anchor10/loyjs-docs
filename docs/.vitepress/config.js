@@ -8,6 +8,7 @@ import MarkdownPreview from 'vite-plugin-markdown-preview'
 export default defineConfig({
 	// lang: 'zh-CN',
 	title: 'Loyjs知识库',
+	titleTemplate: 'loyjs知识库',
 	description: description,
 	head: [
 		['link', { rel: 'icon', href: '/images/loy-logo.jpg' }],
