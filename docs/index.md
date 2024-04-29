@@ -26,18 +26,20 @@ features:
     details: 一个简洁、美观、实用的浏览器起始页，让您的网上冲浪体验更加舒心轻松。
     link: https://home.loyjs.com
   - icon: 🚀
-    title: 快速
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    title: 有道云笔记
+    details: 亿万用户的选择
   - icon: 👼🏻
-    title: 简约
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-    link: /备忘录/
+    title: gitee
+    details: 个人远程仓库
+    link: https://gitee.com/anchor10
   - icon: 🥳
-    title: 优雅
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    title: Kimi
+    details: 别焦虑，Kimi 帮你整理资料
+    link: https://kimi.moonshot.cn
   - icon: 🌆
-    title: 快速
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    title: Vue3
+    details: 渐进式 JavaScript 框架
+    link: https://cn.vuejs.org/
 ---
 
 <style>
