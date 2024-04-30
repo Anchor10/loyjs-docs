@@ -55,6 +55,8 @@ export default defineConfig({
 			},
 		},
 		markdown: {
+			theme: 'github-dark',
+			lineNumbers: true,
 			container: {
 				tipLabel: '提示',
 				warningLabel: '警告',
@@ -111,17 +113,21 @@ export default defineConfig({
 				hyphenToSpace: true, //将文件名中包含的-符号转换为空格并显示为标题
 				excludeFolders: [], // 排除的文件夹
 				excludeFiles: [], // 排除的文件
+				useFolderTitleFromIndexFile: true, // 如果该值为 true，则使用当前文件夹的 index.md 文件中的信息获取菜单名。如果 index.md 文件不存在，则使用文件夹名。
+				useFolderLinkFromIndexFile: true, // 如果此值为 true，则指定指向该文件夹的链接，以便可以导航到当前文件夹中的 index.md 文件。如果 index.md 文件不存在，则不创建链接。
 			},
 			{
 				scanStartPath: '百宝箱',
 				resolvePath: '/百宝箱/',
 				documentRootPath: '/docs',
 				collapsed: false,
-				useTitleFromFileHeading: true,
-				useTitleFromFrontmatter: true,
+				useTitleFromFileHeading: true, // 如果值为 true，则显示md文档的h1标题。如果文件中不存在 h1标题，则显示 Unknown。
+				useTitleFromFrontmatter: true, // 如果该值为 true，则根据文件中标题在 Frontmatter 的值显示标题。如果无法解析此值，则从 h1标记(如果 useTitleFromFileHeding 选项为 true)获取，如果失败，则从文件名获取。
 				hyphenToSpace: true, //将文件名中包含的-符号转换为空格并显示为标题
 				excludeFolders: [], // 排除的文件夹
 				excludeFiles: [], // 排除的文件
+				useFolderTitleFromIndexFile: true, // 如果该值为 true，则使用当前文件夹的 index.md 文件中的信息获取菜单名。如果 index.md 文件不存在，则使用文件夹名。
+				useFolderLinkFromIndexFile: true, // 如果此值为 true，则指定指向该文件夹的链接，以便可以导航到当前文件夹中的 index.md 文件。如果 index.md 文件不存在，则不创建链接。
 			},
 			{
 				scanStartPath: '前端知识库',
@@ -133,6 +139,9 @@ export default defineConfig({
 				hyphenToSpace: true, //将文件名中包含的-符号转换为空格并显示为标题
 				excludeFolders: [], // 排除的文件夹
 				excludeFiles: [], // 排除的文件
+				useFolderTitleFromIndexFile: true, // 如果该值为 true，则使用当前文件夹的 index.md 文件中的信息获取菜单名。如果 index.md 文件不存在，则使用文件夹名。
+				useFolderLinkFromIndexFile: true, // 如果此值为 true，则指定指向该文件夹的链接，以便可以导航到当前文件夹中的 index.md 文件。如果 index.md 文件不存在，则不创建链接。
+				keepMarkdownSyntaxFromTitle: false, // 如果此值为 true，则保留标题文本中包含的 Markdown 语法，而不删除该语法。通常保留任何突出显示或内联代码。无论此选项如何，都将删除超链接文本。
 			}
 		]),
 		aside: 'true',
