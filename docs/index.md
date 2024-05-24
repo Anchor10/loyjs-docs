@@ -8,11 +8,11 @@ hero:
   tagline: 知识库就像书一样，让多篇文档结构化，方便知识的创作与沉淀
   actions:
     - theme: brand
-      text: 备忘录
-      link: /备忘录
+      text: 进入知识库
+      link: /前端知识库/0-HTML/0-HTML基础
     - theme: alt
-      text: 知识库入口
-      link: /前端知识库
+      text: 备忘录
+      link: /备忘录/index
   image:
       src: /images/fine.png
       alt: VitePress
