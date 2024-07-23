@@ -14,6 +14,7 @@ export default defineConfig({
 	title: 'Loyjs知识库',
 	titleTemplate: 'loyjs知识库',
 	description: description,
+	recordNumber: '闽ICP备2021016050号-1',
 	head: [
 		['link', { rel: 'icon', href: '/images/loy-logo.jpg' }],
 		['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1' }],
@@ -182,7 +183,8 @@ export default defineConfig({
 		}, { icon: 'github', link: 'https://gitee.com/anchor10' }],
 		footer: {
 			message: '去做你害怕的事，去见你害怕的人，这就是成长。 ----末那大叔',
-			copyright: 'Copyright © 2023-present By 觅兔先生'
+			link: 'https://beian.miit.gov.cn/',
+			copyright: 'Copyright © 2023-present By 觅兔先生 <a href="https://beian.miit.gov.cn/ target="_blank">闽ICP备2021016050号-1</a>',
 		},
 		darkModeSwitchLabel: '外观',
 		returnToTopLabel: '返回顶部',
