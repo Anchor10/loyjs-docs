@@ -21,6 +21,18 @@ export default defineConfig({
 		['meta', { name: 'author', content: 'loyjs' }],
 		['meta', { name: 'keywords', content: 'loyjs,loyjs知识库,loyjs文档,loyjs教程,loyjs博客,loyjs博客教程' }],
 		['meta', { name: 'description', content: description }],
+		['script',
+			{},
+			`
+				window._hmt = window._hmt || [];
+				(function() {
+					var hm = document.createElement("script");
+					hm.src = "https://hm.baidu.com/hm.js?272d9451ed2faa1f94037454edae30f9";
+					var s = document.getElementsByTagName("script")[0]; 
+					s.parentNode.insertBefore(hm, s);
+				})();
+			`
+		]
 	],
 	sitemap: {
 		hostname: homepage
