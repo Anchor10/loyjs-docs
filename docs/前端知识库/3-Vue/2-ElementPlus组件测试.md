@@ -41,6 +41,7 @@ const switchValue2 = ref(false);
 ```
 ## Text 文本
 
+<div class="text-xl text-blue">测试</div>
 <el-text class="mx-1">Default</el-text>&emsp;
 <el-text class="mx-1" type="primary">Primary</el-text>&emsp;
 <el-text class="mx-1" type="success">Success</el-text>&emsp;

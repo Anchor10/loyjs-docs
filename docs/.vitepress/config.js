@@ -4,6 +4,8 @@ import { description, repository, homepage } from '../../package.json';
 
 import MarkdownPreview from 'vite-plugin-markdown-preview'
 
+import UnoCSS from 'unocss/vite'
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
 	lang: 'zh-CN',
@@ -213,6 +215,6 @@ export default defineConfig({
 		// }
 	},
 	vite: {
-		plugins: [MarkdownPreview()],
+		plugins: [MarkdownPreview(), UnoCSS()],
 	},
 });

@@ -1,6 +1,9 @@
 // https://vitepress.dev/guide/custom-theme
 import { h } from 'vue'
 // import { useData, EnhanceAppContext } from 'vitepress'
+
+import "virtual:uno.css"
+
 import DefaultTheme from 'vitepress/theme'
 
 import ElementPlus from "element-plus";
